@@ -1,0 +1,105 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: radial-gradient(black 15%, transparent 16%) 0 0,
+                radial-gradient(black 15%, transparent 16%) 8px 8px,
+                radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+                radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color: #282828;
+    background-size: 16px 16px;
+}
+#product{
+    height:60%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#bgpaint{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+#tooltip_circle{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #e35583;
+    border-radius: 50%;
+    margin: -15px 0 0 -15px;
+    position: absolute;
+    top:55%;
+    left: 55.2%;
+    transform: translate(-50%,-50%);
+    animation: pulse 0.6s infinite alternate;
+}
+@-webkit-keyframes pulse{
+    from{transform: scale3d(0.5,.5,1);}
+    to{transform: scale3d(1,1,1);}
+}
+.line{
+    height: 2px;
+    width: 100px;
+    background-color: gray;
+    box-shadow: 0 0 10px rgba(255,255,255,.5);
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+}
+.line1{
+    top:48%;
+    left: 58%;
+    transform: translate(-50%,-50%) rotate(135deg);
+}
+.line2{
+    top:42.5%;
+    left: 64.2%;
+    transform: translate(-50%,-50%);
+}
+#info_circle{
+    height: 130px;
+    width: 130px;
+    border: 2px solid gray;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255,255,255,.3),inset 0 0 10px rgba(255,255,255,.3);
+    position: absolute;
+    top:42%;
+    left: 72.7%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+}
+#info{
+    font-family: monospace;
+    font-size: 20px;
+    color:gray;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(255,255,255,.5);
+    position: absolute;
+    top: 42%;
+    left: 72.5%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
